@@ -1,8 +1,8 @@
-import styles from "../../styles/pageId.module.css";
+import styles from "../../styles/Feed.module.css";
 import { useRouter } from "next/router";
 import Toolbar from "../../components/Toolbar";
 
-function pageId({ pageNumber, articles }) {
+function Feed({ pageNumber, articles }) {
   const router = useRouter();
   return (
     <div className="page-container">
@@ -81,4 +81,4 @@ export async function getServerSideProps(context) {
   };
 }
 
-export default pageId;
+export default Feed;
